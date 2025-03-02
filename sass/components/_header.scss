@@ -28,6 +28,9 @@
 
     &__phone {
 
+        width: 22px;
+        height: 22px;
+
         fill: $background-color;
         transition-property: fill;
         transition-duration: 500ms;
@@ -47,3 +50,87 @@
 
 }
 
+@media screen and (min-width: 750px ) {
+
+    .header {
+
+        padding-top: 24px;
+    
+
+
+        &__list {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+    
+        &__link {
+            font-weight: 400;
+            font-size: 20px;
+            color: $text-color;
+            font-family: "Montserrat", sans-serif;
+
+            
+            transition-property: color;
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+    
+            &:hover,
+            &:focus {
+    
+                color: $btn-background-color ;
+    
+            }
+        }
+    
+        &__logo {
+            width: 72px;
+            height: 57px;
+    
+            transition-duration: 300ms;
+      
+
+        }
+    
+        &__phone {
+    
+            width: 24px;
+            height: 24px;
+            
+            transition-duration: 300ms;
+ 
+        }
+    
+
+    
+    }
+}
+
+
+@media screen and (min-width: 1262px ) {
+
+    .header {
+
+        padding-top: 28px;
+    
+
+
+        &__list {
+            gap: 48px;
+        }
+    
+    
+
+    
+        &__phone {
+    
+            width: 28px;
+            height: 28px;
+            
+ 
+        }
+    
+
+    
+    }
+}
