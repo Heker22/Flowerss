@@ -1,0 +1,87 @@
+/*&__{}*/
+.hero {
+    padding-top: 44px;
+    padding-bottom: 100px;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        width: 46px;
+    }
+
+    &__img {
+        width: 145px;
+        height: 274px;
+        position: relative;
+    }
+
+    &__logo {
+        width: 64px;
+        height: 76px;
+    }
+
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 52px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        top: 345px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    /*&__{}*/
+    .hero {
+        padding-top: 38px;
+
+        
+    &__text {
+        width: 76px;
+        font-size: 24px;
+    }
+
+        &__img {
+            width: 390px;
+            height: 636px;
+        }
+
+        &__logo {
+            width: 145px;
+            height: 150px;
+        }
+
+        &__title {
+            font-size: 120px;
+            top: 670px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1262px) {
+
+    /*&__{}*/
+    .hero {
+
+
+
+        &__title {
+            font-size: 120px;
+            top: 715px;
+            left: 610px;
+        }
+    }
+}

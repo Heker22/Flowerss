@@ -1,0 +1,39 @@
+    /*&__{}*/
+    .about {
+        padding-bottom: 60px;
+
+        &__box {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        &__title {
+
+            font-weight: 700;
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+
+        }
+
+        &__line {
+            height: 2px;
+            width: 183px;
+            background-color: $text-color;
+
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            width: 288px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 16px;
+        }
+
+        &__img {
+            width: 288px;
+        }
+    }

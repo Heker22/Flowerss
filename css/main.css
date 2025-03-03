@@ -76,7 +76,7 @@ body {
 .header__phone {
   width: 22px;
   height: 22px;
-  fill: #fff;
+  fill: #000;
   transition-property: fill;
   transition-duration: 500ms;
   transition-timing-function: ease;
@@ -115,8 +115,6 @@ body {
     transition-duration: 300ms;
   }
   .header__phone {
-    width: 24px;
-    height: 24px;
     transition-duration: 300ms;
   }
 }
@@ -127,8 +125,101 @@ body {
   .header__list {
     gap: 48px;
   }
-  .header__phone {
-    width: 28px;
-    height: 28px;
+}
+/*&__{}*/
+.hero {
+  padding-top: 44px;
+  padding-bottom: 100px;
+}
+.hero__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  width: 46px;
+}
+.hero__img {
+  width: 145px;
+  height: 274px;
+  position: relative;
+}
+.hero__logo {
+  width: 64px;
+  height: 76px;
+}
+.hero__title {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 52px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 345px;
+}
+
+@media screen and (min-width: 750px) {
+  /*&__{}*/
+  .hero {
+    padding-top: 38px;
   }
+  .hero__text {
+    width: 76px;
+    font-size: 24px;
+  }
+  .hero__img {
+    width: 390px;
+    height: 636px;
+  }
+  .hero__logo {
+    width: 145px;
+    height: 150px;
+  }
+  .hero__title {
+    font-size: 120px;
+    top: 670px;
+  }
+}
+@media screen and (min-width: 1262px) {
+  /*&__{}*/
+  .hero__title {
+    font-size: 120px;
+    top: 715px;
+    left: 610px;
+  }
+}
+/*&__{}*/
+.about {
+  padding-bottom: 60px;
+}
+.about__box {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.about__line {
+  height: 2px;
+  width: 183px;
+  background-color: #000;
+}
+.about__text {
+  font-weight: 400;
+  font-size: 16px;
+  width: 288px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px;
+}
+.about__img {
+  width: 288px;
 }/*# sourceMappingURL=main.css.map */
