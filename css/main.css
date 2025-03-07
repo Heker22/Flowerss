@@ -270,4 +270,134 @@ body {
   .about__img {
     width: 632px;
   }
+}
+/*&__{}*/
+.store {
+  padding-bottom: 60px;
+}
+.store__box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.store__line {
+  width: 190px;
+  height: 2px;
+  background-color: #000;
+}
+.store__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.store__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.store__img {
+  width: 136px;
+}
+.store__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 12px;
+}
+.store__wrapper-line {
+  display: none;
+}
+.store__text {
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 6px;
+}
+.store__btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  background-color: #e86f54;
+  color: #fff;
+  border: 1px solid #e86f54;
+  margin: 0 auto;
+  border-radius: 38px;
+  padding: 14px 28px;
+  display: block;
+  transition-property: background-color, color, border;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.store__btn:hover, .store__btn:focus {
+  background-color: #fff;
+  color: #e86f54;
+  border: 1px solid #e86f54;
+}
+
+@media screen and (min-width: 750px) {
+  /*&__{}*/
+  .store {
+    padding-bottom: 100px;
+  }
+  .store__box {
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  .store__line {
+    width: 550px;
+  }
+  .store__title {
+    font-size: 44px;
+  }
+  .store__list {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  .store__img {
+    width: 344px;
+  }
+  .store__wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .store__subtitle {
+    font-size: 32px;
+  }
+  .store__wrapper-line {
+    display: block;
+    width: 119px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 16px;
+  }
+  .store__text {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  .store__btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    background-color: #e86f54;
+    color: #fff;
+    border: 1px solid #e86f54;
+    margin: 0 auto;
+    border-radius: 38px;
+    padding: 14px 28px;
+    display: block;
+    transition-property: background-color, color, border;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+  }
+  .store__btn:hover, .store__btn:focus {
+    background-color: #fff;
+    color: #e86f54;
+    border: 1px solid #e86f54;
+  }
 }/*# sourceMappingURL=main.css.map */
