@@ -359,45 +359,30 @@ body {
   }
   .store__img {
     width: 344px;
+    height: 399px;
   }
   .store__wrapper {
     display: flex;
     gap: 8px;
-    align-items: center;
-    margin-top: 18px;
   }
   .store__subtitle {
     font-size: 32px;
+    margin-top: 16px;
   }
   .store__wrapper-line {
     display: block;
     width: 119px;
     height: 2px;
     background-color: #000;
-    margin-top: 16px;
+    margin-top: 37px;
   }
   .store__text {
     font-size: 24px;
     margin-top: 8px;
   }
   .store__btn {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    background-color: #e86f54;
-    color: #fff;
-    border: 1px solid #e86f54;
-    margin: 0 auto;
-    border-radius: 38px;
-    padding: 14px 28px;
-    display: block;
-    transition-property: background-color, color, border;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
-  }
-  .store__btn:hover, .store__btn:focus {
-    background-color: #fff;
-    color: #e86f54;
-    border: 1px solid #e86f54;
+    font-size: 28px;
+    line-height: 86%;
+    padding: 16px 32px;
   }
 }/*# sourceMappingURL=main.css.map */
