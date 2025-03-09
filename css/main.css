@@ -385,4 +385,28 @@ body {
     line-height: 86%;
     padding: 16px 32px;
   }
+}
+@media screen and (min-width: 1062px) {
+  /*&__{}*/
+  .store__box {
+    margin-bottom: 80px;
+  }
+  .store__line {
+    width: 1062px;
+  }
+  .store__img {
+    width: 600px;
+    height: 542px;
+  }
+  .store__subtitle {
+    font-size: 36px;
+  }
+  .store__wrapper-line {
+    width: 286px;
+    margin-top: 40px;
+  }
+  .store__text {
+    font-size: 28px;
+    margin-top: 4px;
+  }
 }/*# sourceMappingURL=main.css.map */
