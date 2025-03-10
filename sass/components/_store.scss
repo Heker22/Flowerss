@@ -105,12 +105,11 @@
 
         &__img {
             width: 344px;
-            height: 399px;
         }
 
         &__wrapper{
             display: flex;
-            gap: 8px;
+            justify-content: space-between;
         }
 
         &__subtitle {
@@ -120,7 +119,7 @@
 
         &__wrapper-line {
             display: block;
-            width: 119px;
+            width: 70px;
             height: 2px;
             background-color: $text-color;
             margin-top: 37px;
@@ -157,9 +156,7 @@
 
         &__img {
             width: 600px;
-            height: 542px;
         }
-
   
         &__subtitle {
             font-size: 36px;

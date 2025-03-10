@@ -1,0 +1,151 @@
+/*&__{}*/
+.delivery {
+    padding-bottom: 60px;
+
+    &__box {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: $text-color;
+    }
+
+    &__line {
+        height: 2px;
+        width: 148px;
+        background-color: $text-color;
+        margin-top: 14px;
+    }
+
+
+    &__item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    &__number {
+        border-radius: 50%;
+        border: 1px solid $text-color;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        width: 232px;
+        color: $text-color;
+
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    &__img {
+        margin-top: 12px;
+        width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+
+    /*&__{}*/
+    .delivery {
+        padding-bottom: 100px;
+
+        &__box {
+            gap: 16px;
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            font-size: 44px;
+        }
+
+        &__line {
+            width: 473px;
+            margin-top: 26px;
+        }
+
+        &__list{
+            padding-left: 72px;
+        }
+
+        &__item {
+            gap: 20px;
+            margin-bottom: 23px;
+        }
+
+        &__number {
+            width: 64px;
+            height: 64px;
+            font-size: 26px;
+        }
+
+        &__text {
+            font-size: 24px;
+            width: 582px;
+
+
+        }
+
+        &__img {
+            margin-top: 20px;
+            width: 768px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1062px) {
+
+    /*&__{}*/
+    .delivery {
+
+        &__box {
+            margin-bottom: 80px;
+        }
+
+        &__line {
+            width: 985px;
+            margin-top: 25px;
+        }
+
+
+        &__item {
+            gap: 56px;
+            margin-bottom: 32px;
+        }
+
+
+
+        &__text {
+            font-size: 32px;
+            width: 834px;
+
+
+        }
+
+        &__img {
+            margin-top: 28px;
+            width: 1280px;
+        }
+    }
+
+}
