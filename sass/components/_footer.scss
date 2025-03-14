@@ -1,0 +1,21 @@
+    /*&__{}*/
+    .footer {
+
+        background-color: $text-color;
+        padding-top: 72px;
+        padding-bottom: 72px;
+
+        &__box{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        &__logo{
+            fill: $background-color;
+            width: 73px;
+            height: 57px;
+        }
+
+       
+    }
