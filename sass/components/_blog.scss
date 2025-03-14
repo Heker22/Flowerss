@@ -31,11 +31,11 @@
         justify-content: center;
     }
     &__img{
-        width: 122px;
+        display: none;
     }
 
     &__img-second{
-        width: 250px;
+        width: 290px;
     }
 
     &__text {
@@ -100,11 +100,14 @@
     }
 
     &__img{
-        width: 144px;
+        display: block;
+        width: 365px;
+
     }
 
+
     &__img-second{
-        width: 344px;
+        display: none;
     }
 
     &__text {
@@ -141,16 +144,21 @@
 
     &__list {
         margin-bottom: 40px;
+        justify-content: space-between;
+        align-items: center;
     }
-/*
+
     &__img{
-        width: 144px;
+        width: 340px;
+        height: 369px;
     }
 
     &__img-second{
-        width: 344px;
+        display: block;
+        width: 340px;
+        height: 421px;
     }
-*/
+
     &__text {
         margin-bottom: 48px;
     }
