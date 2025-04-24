@@ -2,20 +2,108 @@
     .footer {
 
         background-color: $text-color;
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-        &__box{
+        &__box {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-items: flex-start;
         }
 
 
-        &__logo{
-            fill: $background-color;
-            width: 73px;
-            height: 57px;
+        &__logo {
+            display: none;
         }
 
-       
+        &__title-home {
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "Inter", sans-serif;
+            margin-bottom: 18px;
+            color: $background-color;
+        }
+
+        &__list {
+            margin-bottom: 32px;
+        }
+
+        &__item-home {
+            margin-bottom: 12px;
+        }
+
+        &__link-home {
+            font-weight: 500;
+            font-size: 14px;
+            font-family: "Inter", sans-serif;
+            color: $background-color;
+        }
+
+        &__title-time {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "Inter", sans-serif;
+            color: $background-color;
+            margin-left: 44px;
+        }
+
+
+        &__list-time {
+            margin-left: 44px;
+        }
+
+        &__link-time {
+            color: $background-color;
+            font-weight: 500;
+            font-size: 14px;
+            font-family: "Inter", sans-serif;
+        }
+
+
+        &__title-contacts {
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "Inter", sans-serif;
+            margin-bottom: 18px;
+            color: $background-color;
+        }
+
+
+        &__list-contacts{
+            width: 130px;
+        }
+
+
+        &__item-contacts{
+            margin-bottom: 12px;
+        }
+
+        &__link-contacts {
+            font-weight: 500;
+            font-size: 14px;
+            color: $background-color;
+            font-family: "Inter", sans-serif;
+        }
+
+
+        &__list-social{
+            display: flex;
+            gap: 14px;
+        }
+
+        &__logo-social{
+            stroke: $background-color;
+            width: 28px;
+            stroke-width: 2px;
+
+        }
+
+        &__logo-socials{
+           fill: $background-color;
+            width: 28px;
+        }
+
+
     }
