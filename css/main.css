@@ -658,8 +658,6 @@ body {
 .footer__box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 .footer__logo {
   display: none;
@@ -689,10 +687,6 @@ body {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   color: #fff;
-  margin-left: 44px;
-}
-.footer__list-time {
-  margin-left: 44px;
 }
 .footer__link-time {
   color: #fff;
@@ -727,8 +721,90 @@ body {
   stroke: #fff;
   width: 28px;
   stroke-width: 2px;
+  height: 28px;
+  transition-property: stroke;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.footer__logo-social:hover,
+.footer__logo-social :focus {
+  stroke: #e86f54;
 }
 .footer__logo-socials {
   fill: #fff;
   width: 28px;
+  height: 28px;
+  transition-property: fill;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.footer__logo-socials:hover,
+.footer__logo-socials :focus {
+  fill: #e86f54;
+}
+.footer__wrapper {
+  margin-right: 70px;
+}
+.footer__wrap {
+  margin-right: 32px;
+}
+
+@media screen and (min-width: 750px) {
+  /*&__{}*/
+  .footer__box {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__boxer {
+    margin-right: 0;
+  }
+  .footer__list-social {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__list-contacts {
+    width: 250px;
+  }
+  .footer__wrapper {
+    margin-right: 0;
+  }
+  .footer__wrap {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1062px) {
+  /*&__{}*/
+  .footer__box {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__boxer {
+    margin-right: 0;
+  }
+  .footer__list-social {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo {
+    display: block;
+    width: 73px;
+    height: 57px;
+    fill: #fff;
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+  }
+  .footer__logo:hover,
+  .footer__logo :focus {
+    fill: #e86f54;
+  }
+  .footer__list-contacts {
+    width: 250px;
+  }
+  .footer__wrapper {
+    margin-right: 0;
+  }
+  .footer__wrap {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
