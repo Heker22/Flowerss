@@ -1,6 +1,6 @@
 /*&__{}*/
 .header {
-
+    position: relative;
     padding-top: 16px;
 
 
@@ -48,14 +48,107 @@
         display: none;
     }
 
+    .js-close-menu {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width:734px) {
+        .js-close-menu {
+            right: 50px;
+        }
+    }
+
+    .menu-container {
+        background-color: $btn-background-color;
+        position: fixed;
+        width: 320px;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        padding-top: 136px;
+        padding-bottom: 20px;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transfrom 250ms ease;
+    }
+
+    .js-open-menu {
+        position: absolute;
+        left: 270px;
+        margin-right: 20px;
+        background-color: transparent;
+        top: 20px;
+        border: none;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+    }
+
+    .menu-toggle-icon {
+        fill: $background-color;
+    }
+
+    .menu-container.is-open {
+        transform: translateX(0);
+
+    }
+
+    .mobile__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile__item {
+        margin-bottom: 24px;
+    }
+
+    .mobile__link {
+        color: $background-color;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+
+        &:hover,
+        &:focus {
+            color: $btn-background-color;
+        }
+    }
+
+    .mobile__wrap {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        gap: 18px;
+    }
+
+    .mobile__icon {
+        width: 18px;
+        height: 18px;
+        fill: $background-color;
+
+
+        &:hover,
+        &:focus {
+            stroke: $btn-background-color;
+        }
+    }
+
 }
 
-@media screen and (min-width: 750px ) {
+@media screen and (min-width: 750px) {
 
     .header {
 
         padding-top: 24px;
-    
+
 
 
         &__list {
@@ -63,65 +156,65 @@
             gap: 24px;
             align-items: center;
         }
-    
+
         &__link {
             font-weight: 400;
             font-size: 20px;
             color: $text-color;
             font-family: "Montserrat", sans-serif;
 
-            
+
             transition-property: color;
             transition-duration: 300ms;
             transition-timing-function: ease;
-    
+
             &:hover,
             &:focus {
-    
+
                 color: $btn-background-color ;
-    
+
             }
         }
-    
+
         &__logo {
             width: 72px;
             height: 57px;
-    
+
             transition-duration: 300ms;
-      
+
 
         }
-    
+
         &__phone {
-        
-            transition-duration: 300ms;
- 
-        }
-    
 
-    
+            transition-duration: 300ms;
+
+        }
+
+
+
     }
 }
 
 
-@media screen and (min-width: 1262px ) {
+@media screen and (min-width: 1262px) {
 
     .header {
 
         padding-top: 28px;
-    
+
 
 
         &__list {
             gap: 48px;
         }
-    
-    
 
-    
-       
-    
 
-    
+
+
+
+
+
+
     }
 }

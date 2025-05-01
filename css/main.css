@@ -56,6 +56,7 @@ body {
 
 /*&__{}*/
 .header {
+  position: relative;
   padding-top: 16px;
 }
 .header__navigation {
@@ -86,6 +87,82 @@ body {
 }
 .header__list {
   display: none;
+}
+.header .js-close-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 734px) {
+  .header .js-close-menu {
+    right: 50px;
+  }
+}
+.header .menu-container {
+  background-color: #e86f54;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding-top: 136px;
+  padding-bottom: 20px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transfrom 250ms ease;
+}
+.header .js-open-menu {
+  position: absolute;
+  left: 270px;
+  margin-right: 20px;
+  background-color: transparent;
+  top: 20px;
+  border: none;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+.header .menu-toggle-icon {
+  fill: #fff;
+}
+.header .menu-container.is-open {
+  transform: translateX(0);
+}
+.header .mobile__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .mobile__item {
+  margin-bottom: 24px;
+}
+.header .mobile__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.header .mobile__link:hover, .header .mobile__link:focus {
+  color: #e86f54;
+}
+.header .mobile__wrap {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 18px;
+}
+.header .mobile__icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+.header .mobile__icon:hover, .header .mobile__icon:focus {
+  stroke: #e86f54;
 }
 
 @media screen and (min-width: 750px) {
