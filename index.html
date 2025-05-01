@@ -49,7 +49,7 @@
         </div>
         <!--Mobile menu start-->
         <button class="btn menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg  width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                     clip-rule="evenodd"></path>
@@ -57,7 +57,8 @@
         </button>
         <div class="menu-container js-menu-container">
             <button class="menu-toggle js-open-menu">
-                <svg class="menu-toggle-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <svg class="menu-toggle-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24">
                     <path fill-rule="evenodd"
                         d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                         clip-rule="evenodd"></path>
@@ -80,7 +81,7 @@
                     <a href="" class="mobile__link">Blog</a>
                 </li>
             </ul>
-         <!--Mobile menu end-->
+            <!--Mobile menu end-->
     </header>
     <main>
         <section class="hero">
@@ -180,10 +181,44 @@
                         </p>
                     </li>
                 </ul>
-                <button class="store__btn">
+                <button class="store__btn" data-modal-open>
                     Order flowers
                 </button>
+                <!--start modal window-->
             </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-btn" data-modal-close>
+                        <svg class="modal-icon">
+                            <use class="modal-icon-wrap" href="./img/symbol-defs2.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <div class="modal-wrap">
+                        <h2 class="modal-wrap-title">
+                            Contact us
+                        </h2>
+                        <p class="modal-text">
+                            If you have any additional questions or you want to clarify something before you make an
+                            order please fill in your contact details. We will call you back.
+                        </p>
+                        <form class="modal-form">
+                            <label class="form-item">Name<input class="form-input" type="text" required minlength="3"
+                                    maxlength="20" placeholder="Your name">
+                            </label>
+                            <label class="form-item">Email<input class="form-input" type="text" required minlength="10"
+                                    maxlength="15" placeholder="Your email">
+                                <svg class="form-icon">
+                                    <use href="./img/modal-icon.svg#icon-phone"></use>
+                                </svg>
+                            </label>
+                            <button class="form-btn" disabled>
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end modal window-->
         </section>
         <section class="delivery">
             <div class="container">
@@ -308,7 +343,7 @@
                         </li>
                         <li class="footer__item-contacts">
                             <a href="mailto:anemonestudio@example.com" class="footer__link-contacts">
-                                anemonestudio  @example.com
+                                anemonestudio @example.com
                             </a>
                         </li>
                         <li class="footer__item-contacts">
@@ -341,7 +376,8 @@
         </div>
     </footer>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 

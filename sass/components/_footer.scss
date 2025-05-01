@@ -36,6 +36,14 @@
             font-size: 14px;
             font-family: "Inter", sans-serif;
             color: $background-color;
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            :focus{
+                color: $btn-background-color;
+            }
         }
 
         &__title-time {
@@ -52,6 +60,14 @@
             font-weight: 500;
             font-size: 14px;
             font-family: "Inter", sans-serif;
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            :focus{
+                color: $btn-background-color;
+            }
         }
 
 
@@ -78,7 +94,14 @@
             font-size: 14px;
             color: $background-color;
             font-family: "Inter", sans-serif;
-        }
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: ease;
+
+            &:hover,
+            :focus{
+                color: $btn-background-color;
+            }        }
 
 
         &__list-social {

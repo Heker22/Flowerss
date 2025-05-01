@@ -30,11 +30,11 @@
 
         width: 22px;
         height: 22px;
-
         fill: $text-color;
         transition-property: fill;
         transition-duration: 500ms;
         transition-timing-function: ease;
+
 
         &:hover,
         &:focus {
@@ -77,6 +77,7 @@
         z-index: 999;
         transform: translateX(100%);
         transition: transfrom 250ms ease;
+
     }
 
     .js-open-menu {
@@ -118,7 +119,7 @@
 
         &:hover,
         &:focus {
-            color: $btn-background-color;
+            color: $text-color;
         }
     }
 
@@ -191,7 +192,58 @@
 
         }
 
+        .js-close-menu {
+            display: none;
+        }
 
+        .menu-container {
+            display: none;
+
+        }
+
+        .js-open-menu {
+            display: none;
+        }
+
+        .menu-toggle-icon {
+            display: none;
+        }
+
+        .menu-container.is-open {
+            display: none;
+
+        }
+
+        .mobile__list {
+            display: none;
+        }
+
+        .mobile__item {
+            display: none;
+        }
+
+        .mobile__link {
+            display: none;
+
+            &:hover,
+            &:focus {
+                display: none;
+            }
+        }
+
+        .mobile__wrap {
+            display: none;
+        }
+
+        .mobile__icon {
+            display: none;
+
+
+            &:hover,
+            &:focus {
+                display: none;
+            }
+        }
 
     }
 }
